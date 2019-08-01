@@ -12,6 +12,8 @@ import android.view.ViewGroup;
  * &nbsp;&nbsp;&nbsp;&nbsp;boolean ext = interceptTouchHelper.onInterceptTouchEvent(ev);<br>
  * &nbsp;&nbsp;&nbsp;&nbsp;return result && ext;<br>
  * }
+ * 拦截辅助器，主要用于ViewGroup拦截滑动事件，只需在ViewGroup.onInterceptTouchEvent方法中使用：
+ * 注意：此辅助器会优先判断子视图是否需要滑动事件，如果需要滑动事件，则辅助器直接返回false。
  */
 public class InterceptTouchHelper {
 

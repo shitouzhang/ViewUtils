@@ -6,6 +6,7 @@ import android.view.MotionEvent;
 
 /**
  * 手势辅助器
+ * 注意：此辅助器不是回调方式，需要主动去获取手势进行判断，执行相应操作。
  */
 public class GestureHelper {
 

@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 
 /**
  * 滑动辅助器，可以直接使用{@link ViewScrollHelper ViewScrollHelper}
+ * 注意：在viewFling方法中，速度应该是取相反值，因为参数中的速度表示的是触摸滑动的速度，与滑动的速度方向刚好相反。
+ * getViewHorizontallyScrollSize和getViewVerticallyScrollSize，表示的是视图可以滑动的范围，一般都是range-extent，
+ * 不过可以自己根据实际情况，返回正确的值。
  */
 public abstract class ScrollHelper {
 
